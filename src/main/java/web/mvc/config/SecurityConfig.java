@@ -31,6 +31,7 @@ public class SecurityConfig {
     //AuthenticationManager 가 인자로 받을 AuthenticationConfiguraion 객체 생성자
     private final AuthenticationConfiguration authenticationConfiguration;
     private final JWTUtil jwtUtil;
+
     //AuthenticationManager Bean 등록
     @Bean
     public AuthenticationManager authenticationManager(AuthenticationConfiguration configuration) throws Exception {
